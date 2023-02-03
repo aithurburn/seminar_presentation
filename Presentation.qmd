@@ -1,0 +1,102 @@
+---
+title: "Power motivations and risk sensitivity tolerance"
+subtitle: "DoPL and DOSPERT"
+author: Andrew Ithurburn
+institute: University of Edinburgh
+date: today
+header:  Power motivations and risk sensitivity tolerance
+date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+embed-resources: false
+bibliography: ["/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/References/references.bib"]
+format: coeos-revealjs
+output-file: 'index.html'
+
+---
+
+```{r}
+#| include: false
+source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentation/_extensions/mcanouil/coeos/setup-ggplot2-coeos.R")
+
+```
+
+
+## OSF
+:::: {.columns}
+
+::: {.column width=50%}
+- Experiment 1: 
+   - <u> [https://osf.io/eg3ta](http://osf.io/eg3ta) </u>
+
+- Experiment 2:
+   - <u> [https://osf.io/mcb46](https://osf.io/mcb46) </u>
+:::
+
+::: {.column width=25%}
+<a href = 'https://osf.io/eg3ta'>
+<img src='./Images/OSF_1.jpeg'  border = '0' class = 'jpeg-image'>
+</a>
+<p class = 'caption'>Experiment 1</p>
+:::
+
+::: {.column width=25%}
+<a href = 'https://osf.io/mcb46'>
+<img src='./Images/OSF_1.jpeg' border = '0' class = 'jpeg-image'>
+</a>
+<p class = 'caption'> Experiment 2</p>
+:::
+
+::::
+## Overview
+
+- Background:
+  - Risk and Decision-making
+- Experiments 1 and 2
+  - Experiment 1: Intro to DOSPERT and DoPL
+  - Experiment 2: DoPL and DOSPERT with Narcissism
+- Future directions
+
+## Background
+
+### Risk
+::: {.incremental}
+- Risk is a fundamental part of life
+   - Different based on domain
+      - Financial, Health, Social, etc.
+:::
+::: {.incremental}
+   - Diifferences based on perspective
+      - Risky vs. Safe
+      - Loss vs. Gain
+      - Certainty vs. Uncertainty
+:::
+
+## The present experiments
+
+
+## Experiment 1
+
+## Experimental Design
+
+- Measures
+   - Domain-Specific Risk-Taking Scale ^[@weber2002]
+   - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
+
+## Results
+
+## Experiment 2
+
+## Experimental Design
+
+- Measures
+   - Domain-Specific Risk-Taking Scale ^[@weber2002]
+   - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
+   - Brief-Pathological Narcissism Scale ^[@schoenleber2015]
+
+
+## Results
+
+
+## References 
+
+::: {#refs}
+:::
