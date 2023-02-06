@@ -14,7 +14,7 @@ contributes:
       header:  Quarto Presentations with beautiful slide decks made by RevealJs
       footer: |
         <a href="https://github.com/aithurburn/seminar_presentation">Seminar Presentation Github</a>
-      header-logo: "./_extensions/mcanouil/coeos/UoE_Centred-Logo_white_v1_160215.svg"
+      header-logo: "https://github.com/aithurburn/seminar_presentation/blob/master/_extensions/mcanouil/coeos/UoE_Centred-Logo_white_v1_160215.svg"
       include-in-header: favicon.html
       plugins: ["./reveal.js-plugins-4.1.5/fullscreen/plugin.js", "./reveal.js-plugins-4.1.5/header/plugin.js"]
       filters: ["./reveal.js-plugins-4.1.5/header/reveal-header.lua"]
