@@ -10,7 +10,7 @@ embed-resources: false
 bibliography: ["/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/References/references.bib"]
 format: coeos-revealjs
 output-file: 'index.html'
-header-logo: "./Images/UoE_Centred-Logo_white_v1_160215.png"
+
 ---
 
 ```{r}
