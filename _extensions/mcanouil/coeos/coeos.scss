@@ -20,6 +20,7 @@ $code-block-border-color: $body-color !default;
 
 /*-- scss:rules --*/
 
+
 .jpeg-image {
   height: 100%;
   width: 100%;
@@ -72,15 +73,6 @@ $code-block-border-color: $body-color !default;
 
 .footer {
   bottom: 10px !important;
-  color: $body-color !important;
-}
-
-.slide-logo {
-  display: block !important;
-  position: fixed !important;
-  top: 0 !important;
-  right: 10px !important;
-  width: auto !important;
   color: $body-color !important;
 }
 

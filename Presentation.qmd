@@ -1,5 +1,5 @@
 ---
-title: "Power motivations and risk sensitivity tolerance_testing_changed"
+title: "Power motivations and risk sensitivity tolerance"
 subtitle: "DoPL and DOSPERT"
 author: Andrew Ithurburn
 institute: University of Edinburgh
