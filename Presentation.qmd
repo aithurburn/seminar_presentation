@@ -1,11 +1,11 @@
 ---
 title: "Power motivations and risk sensitivity tolerance"
-subtitle: "DoPL and DOSPERT"
+subtitle: "<font style='font-size:80%'>DoPL and DOSPERT</font>"
 author: Andrew Ithurburn
 institute: University of Edinburgh
 date: today
 header:  Power motivations and risk sensitivity tolerance
-date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+date-format: "dddd, [<font style='font-size:1.5rem'>the</font>] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [<font style='font-size:1.5rem'>of</font>] MMMM, YYYY"
 embed-resources: false
 bibliography: ["/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/References/references.bib"]
 format: coeos-revealjs
@@ -13,14 +13,19 @@ output-file: 'index.html'
 
 ---
 
-```{r}
+```{r setup}
 #| include: false
-source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentation/_extensions/mcanouil/coeos/setup-ggplot2-coeos.R")
-
+library("papaja")
+library("quarto")
+setwd("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation")
+source("./R/libraries.R")
+source("./R/Chapter_2_index.r")
+options(knitr.kable.NA = "")
+options((knitr.table.format = "latex"))
 ```
 
 
-## OSF
+## OSF {.smaller}
 :::: {.columns}
 
 ::: {.column width=50%}
@@ -46,7 +51,8 @@ source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentat
 :::
 
 ::::
-## Overview
+
+## Overview {.smaller}
 
 - Background:
   - Risk and Decision-making
@@ -55,9 +61,11 @@ source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentat
   - Experiment 2: DoPL and DOSPERT with Narcissism
 - Future directions
 
-## Background
+
+## Background {.smaller}
 
 ### Risk
+
 ::: {.incremental}
 - Risk is a fundamental part of life
    - Different based on domain
@@ -70,22 +78,22 @@ source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentat
       - Certainty vs. Uncertainty
 :::
 
-## The present experiments
+## The present experiments {.smaller}
 
 
-## Experiment 1
+## Experiment 1 {.smaller}
 
-## Experimental Design
+## Experimental Design {.smaller}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
 
-## Results
+## Results {.smaller}
 
-## Experiment 2
+## Experiment 2 {.smaller}
 
-## Experimental Design
+## Experimental Design {.smaller}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
@@ -93,10 +101,10 @@ source("/Users/andrew/Documents/1_UoE/Seminar/Spring 2023/Presentation/Presentat
    - Brief-Pathological Narcissism Scale ^[@schoenleber2015]
 
 
-## Results
+## Results {.smaller}
 
 
-## References 
+## References {.smaller}
 
-::: {#refs}
+::: {#refs} {.smaller}
 :::

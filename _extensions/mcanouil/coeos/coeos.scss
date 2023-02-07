@@ -6,6 +6,11 @@
 
 // fonts
 $font-family-sans-serif: 'SF Pro';
+$presentation-h1-font-size: 2rem !default;
+$presentation-h2-font-size: 1.5rem !default;
+$presentation-h3-font-size: 1rem !default;
+$presentation-h4-font-size: 1rem !default;
+$presentation-h5-font-size: 1rem !default;
    
 // colors
 $body-bg: #041E42 !default;
@@ -33,6 +38,9 @@ $code-block-border-color: $body-color !default;
   text-align: center;
 }
 
+.reveal .slide #title-slide .date {
+  font-size: 1em !important;
+}
 #title-slide {
   text-align: left;
 
@@ -119,7 +127,7 @@ code.sourceCode > span {
   height: 100% !important;
   width: auto !important;
   color: $body-color !important;
-  border-bottom: solid white 3px;
+  
 }
   
 
@@ -128,11 +136,10 @@ code.sourceCode > span {
   position: fixed !important;
   text-align: left;
   top: 5% !important;
-  width: 95%;
+  width: auto !important;
   max-height: 15% !important;
-  height: 100% !important;
   color: $body-color !important;
-  border-bottom: solid white 3px;
+  border-bottom: #FAFAFA 1px solid !important;
 }
 
 
@@ -140,10 +147,17 @@ code.sourceCode > span {
   margin-top: 5vh !important;
 }
 
+h1,
+h2 {
+  border-bottom: #FAFAFA 1px solid;
+}
 .inverse-header {
   color: #74ffba !important;
 }
 
+.reveal .slide .header {
+  color: #74ffba !important;
+}
 .reveal .header-logo {
   position: fixed !important;
   display: block !important;

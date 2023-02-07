@@ -9,6 +9,10 @@ contributes:
     revealjs:
       slide-number: c
       transition: slide
+      parallax-background-image: "./Images/gradient.png"
+      parallax-background-size: "3000px 2000px"
+      parallax-background-horizontal: 200
+      parallax-background-vertical: 50
       theme: "coeos.scss"
       header-logo: "./Images/UoE_Logo.png"
       footer: |
