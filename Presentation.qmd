@@ -4,12 +4,15 @@ subtitle: "<font style='font-size:80%'>DoPL and DOSPERT</font>"
 author: Andrew Ithurburn
 institute: University of Edinburgh
 date: today
-header:  Power motivations and risk sensitivity tolerance
 date-format: "dddd, [<font style='font-size:1.5rem'>the</font>] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [<font style='font-size:1.5rem'>of</font>] MMMM, YYYY"
 embed-resources: false
 bibliography: ["/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/References/references.bib"]
 format: coeos-revealjs
 output-file: 'index.html'
+title-block-banner: "#FFFFFF"
+logo: "./Images/logo.png"
+transition: fade
+transition-speed: default
 
 ---
 
@@ -25,10 +28,10 @@ options((knitr.table.format = "latex"))
 ```
 
 
-## OSF {.smaller}
+## OSF {.smaller auto-animate="true"}
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=40%}
 - Experiment 1: 
    - <u> [https://osf.io/eg3ta](http://osf.io/eg3ta) </u>
 
@@ -36,14 +39,14 @@ options((knitr.table.format = "latex"))
    - <u> [https://osf.io/mcb46](https://osf.io/mcb46) </u>
 :::
 
-::: {.column width=25%}
+::: {.column width=30%}
 <a href = 'https://osf.io/eg3ta'>
 <img src='./Images/OSF_1.jpeg'  border = '0' class = 'jpeg-image'>
 </a>
 <p class = 'caption'>Experiment 1</p>
 :::
 
-::: {.column width=25%}
+::: {.column width=30%}
 <a href = 'https://osf.io/mcb46'>
 <img src='./Images/OSF_1.jpeg' border = '0' class = 'jpeg-image'>
 </a>
@@ -52,59 +55,130 @@ options((knitr.table.format = "latex"))
 
 ::::
 
-## Overview {.smaller}
+## Overview {.smaller auto-animate="true"}
 
 - Background:
-  - Risk and Decision-making
+   - Risk and Decision-making
 - Experiments 1 and 2
-  - Experiment 1: Intro to DOSPERT and DoPL
-  - Experiment 2: DoPL and DOSPERT with Narcissism
+   - Experiment 1: Intro to DOSPERT and DoPL
+   - Experiment 2: DoPL and DOSPERT with Narcissism
 - Future directions
 
 
-## Background {.smaller}
+## Background {.smaller auto-animate="true"}
 
 ### Risk
 
-::: {.incremental}
 - Risk is a fundamental part of life
    - Different based on domain
       - Financial, Health, Social, etc.
-:::
-::: {.incremental}
-   - Diifferences based on perspective
+   - Differences based on perspective
       - Risky vs. Safe
       - Loss vs. Gain
       - Certainty vs. Uncertainty
+
+## The present experiments {.smaller auto-animate="true"}
+
+- Experiment 1
+   - Seeks to verify the validity of the DOSPERT and DoPL in understanding risk and judgment
+   - Seeks to understand the relationship between risk and power motivations
+
+## The present experiments {.smaller auto-animate="true"}
+
+:::: {.columns}
+
+::: {.column width=50%}
+- Experiment 1
+   - Seeks to verify the validity of the DOSPERT and DoPL in understanding risk and judgment
+   - Seeks to understand the relationship between risk and power motivations
 :::
+::: {.column width=50%}
+- Experiment 2
+   - Seeks to understand the relationship between risk and power motivations with narcissism
+   - Investigate dominance as a moderator of the relationship between risk and power motivations
+:::
+::::
 
-## The present experiments {.smaller}
+## Experiment 1 {.smaller auto-animate="true"}
 
-
-## Experiment 1 {.smaller}
-
-## Experimental Design {.smaller}
+## Experimental Design {.smaller auto-animate="true"}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
 
-## Results {.smaller}
+## Results {.smaller auto-animate="true"}
 
-## Experiment 2 {.smaller}
+:::: {.columns}
 
-## Experimental Design {.smaller}
+::: {.column width=50%}
+
+
+
+:::
+
+
+::: {.column width=50%}
+
+```{r}
+#| label: fig-Experiment1PosteriorEffectSizes
+#| fig.height: 12
+#| fig.width: 12
+#| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 1."
+#| warning: FALSE
+#| echo: FALSE
+library(patchwork)
+library(forcats)
+library(ggprism)
+
+graph_1 <- MutateHDI::mutate_ggplot(dataframe = m4_exp_1, regexPairs = c("b_DOSPERTPerceptionz", "b_DOSPERTBenefitz", "b_DOSPERTLikelihoodz"), labels = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), limits = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), plotTitle = "A: Experiment 1", showLegend = "Yes")
+
+graph_1
+```
+
+:::
+:::::
+
+## Experiment 2 {.smaller auto-animate="true"}
+
+- Measures
+   - Domain-Specific Risk-Taking Scale ^[@weber2002]
+   - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
+
+## Experiment 2 {.smaller auto-animate="true"}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
    - Brief-Pathological Narcissism Scale ^[@schoenleber2015]
 
+## Results {.smaller auto-animate="true"}
 
-## Results {.smaller}
+:::: {.columns}
+
+::: {.column width=50%}
 
 
-## References {.smaller}
 
-::: {#refs} {.smaller}
+:::
+
+
+::: {.column width=50%}
+
+```{r}
+#| label: fig-Experiment2PosteriorEffectSizes
+#| fig.height: 12
+#| fig.width: 12
+#| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 2."
+#| warning: FALSE
+#| echo: FALSE
+graph_2 <- MutateHDI::mutate_ggplot(dataframe = m2_exp_2, regexPairs = c("b_DOSPERTPerceptionz", "b_DOSPERTBenefitz", "b_DOSPERTLikelihoodz"), labels = c("Age", "Gender", "PNI", "Leadership", "Prestige", "Dominance", "Intercept"), limits = c("Age", "Gender", "PNI", "Leadership", "Prestige", "Dominance", "Intercept"), plotTitle = "B: Experiment 2", showLegend = "Yes")
+graph_2
+```
+:::
+:::::
+
+## References {.smaller auto-animate="true"}
+
+::: {#refs}
 :::
