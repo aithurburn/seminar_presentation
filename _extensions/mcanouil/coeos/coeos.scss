@@ -2,7 +2,7 @@
 
 // fonts
 $font-family-sans-serif: 'SF Pro';
-$presentation-h1-font-size: 2rem !default;
+$presentation-h1-font-size: 2.5rem !default;
 $presentation-h1-font-color: #FAFAFA !default;
 $presentation-h2-font-color: #FAFAFA !default;
 $presentation-h3-font-color: #FAFAFA !default;
@@ -40,9 +40,8 @@ $code-block-border-color: $body-color !default;
   left: 0 !important;
   max-height: 14% !important;
   height: 100% !important;
-  width: auto !important;
+  width: 14% !important;
   color: $body-color !important;
-  z-index: 10000 !important;
 }
 .caption {
   font-size: .75em;
