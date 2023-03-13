@@ -28,7 +28,7 @@ options((knitr.table.format = "latex"))
 ```
 
 
-## OSF {.smaller auto-animate="true"}
+## OSF {.smaller auto-animate=true}
 :::: {.columns}
 
 ::: {.column width=40%}
@@ -55,7 +55,7 @@ options((knitr.table.format = "latex"))
 
 ::::
 
-## Overview {.smaller auto-animate="true"}
+## Overview {.smaller auto-animate=true}
 
 - Background:
    - Risk and Decision-making
@@ -66,19 +66,19 @@ options((knitr.table.format = "latex"))
 - Future directions
 
 
-## Background {.smaller auto-animate="true"}
+## Background {.smaller auto-animate=true}
 
 ### Risk
 
 - Risk is a fundamental part of life
    - Different based on domain
-      - Financial, Health, Social, etc.
+      - Financial, Health, Social, etc. [@weber2002]
    - Differences based on perspective
       - Risky vs. Safe
       - Loss vs. Gain
       - Certainty vs. Uncertainty
 
-## Background {.smaller auto-animate="true"}
+## Background {.smaller auto-animate=true}
 
 :::: {.columns}
 
@@ -151,37 +151,53 @@ options((knitr.table.format = "latex"))
 :::
 ::::
 
-## The present experiments {.smaller}
 
-- Experiment 1
-   - Seeks to verify the validity of the DOSPERT and DoPL in understanding risk and judgment
-   - Seeks to understand the relationship between risk and power motivations
-
-## The present experiments {.smaller auto-animate="true"}
+## The present experiments {.smaller auto-animate=true}
 
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=50% .fragment}
 - Experiment 1
    - Seeks to verify the validity of the DOSPERT and DoPL in understanding risk and judgment
    - Seeks to understand the relationship between risk and power motivations
 :::
-::: {.column width=50%}
+::: {.column width=50% .fragment}
 - Experiment 2
    - Seeks to understand the relationship between risk and power motivations with narcissism
    - Investigate dominance as a moderator of the relationship between risk and power motivations
 :::
 ::::
 
-## Experiment 1 {.smaller auto-animate="true"}
+## Experiment 1 {.smaller auto-animate=true}
 
-## Experimental Design {.smaller auto-animate="true"}
+## Experimental Design {.smaller auto-animate=true}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
 
-## Results {.smaller auto-animate="true"}
+## Experimental Design {.smaller auto-animate=true}
+
+- 111 participants on Prolific completed the experiment
+   - Majority white along yet with equal men and women
+   - Completed either A-levels or undergraduate degrees
+
+## Hypotheses
+
+- H1: Dominance will be positively associated with belief in risk positivity/benefit
+- H2: Prestige will not be related to risk positivity/benefit
+- H3: Leadership will be weakly negatively related to risk positivity/benefit
+- H4: No unique relationship between DoPL motives and general risk perception
+- H5: Males will be more risk-prone than females for financial risk-taking/acceptance [@franco2011]
+- H6: A general positive relationship between unique dominance and sub-domains of risk-taking/acceptance
+
+
+### Results {.smaller auto-animate=true}
+
+
+
+
+## Results {.smaller auto-animate=true}
 
 :::: {.columns}
 
@@ -195,7 +211,7 @@ options((knitr.table.format = "latex"))
 ::: {.column width=50%}
 
 ```{r}
-#| label: fig-Experiment1PosteriorEffectSizes
+#| label: fig-Experiment1PosteriorEffectSizes_1
 #| fig.height: 12
 #| fig.width: 12
 #| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 1."
@@ -213,20 +229,20 @@ graph_1
 :::
 :::::
 
-## Experiment 2 {.smaller auto-animate="true"}
+## Experiment 2 {.smaller auto-animate=true}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
 
-## Experiment 2 {.smaller auto-animate="true"}
+## Experiment 2 {.smaller auto-animate=true}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
    - Brief-Pathological Narcissism Scale ^[@schoenleber2015]
 
-## Results {.smaller auto-animate="true"}
+## Results {.smaller auto-animate=true}
 
 :::: {.columns}
 
@@ -240,7 +256,7 @@ graph_1
 ::: {.column width=50%}
 
 ```{r}
-#| label: fig-Experiment2PosteriorEffectSizes
+#| label: fig-Experiment2PosteriorEffectSizes_2
 #| fig.height: 12
 #| fig.width: 12
 #| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 2."
@@ -252,33 +268,42 @@ graph_2
 :::
 :::::
 
-## Results: Mediation and Moderation {.smaller auto-animate="true"}
+## Results: Mediation and Moderation {.smaller auto-animate=true}
 
 :::: {.columns}
 
 ::: {.column width=50%}
+```{r}
+#| label: fig-MediationFits_a_and_b
+#| fig.position: H
+#| out.width: "2in"
+#| out.height: "2in"
+#| fig.cap: "A: Figure represents a mediation model with Narcissism as the central mediator in the model. The outcome variables being risk likelihood. \n B: Figure represents a mediation model with Narcissism and Dominance as the central mediators in a parallel model.The outcome variables being risk likelihood."
+#| echo: FALSE
 
+knitr::include_graphics("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Chapters/GraphsandTables/Chapter2/Mediation_fits/Mediation Figures/Mediation_a_b.png")
+```
 
 :::
 
 ::: {.column width=50%}
 
 ```{r}
-#| label: fig-MediationFits
+#| label: fig-MediationFits_c
 #| fig.position: H
-#| out.width: "6in"
-#| out.height: "6in"
-#| fig.cap: "A: Figure represents a mediation model with Narcissism as the central mediator in the model. The outcome variables being risk likelihood. \n B: Figure represents a mediation model with Narcissism and Dominance as the central mediators in a parallel model.The outcome variables being risk likelihood. \n C: Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model.The outcome variables being risk likelihood."
+#| out.width: "2in"
+#| out.height: "2in"
+#| fig.cap: "Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model.The outcome variables being risk likelihood."
 #| echo: FALSE
 
-knitr::include_graphics("./Images/Mediation_fit_1.png")
+knitr::include_graphics("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Chapters/GraphsandTables/Chapter2/Mediation_fits/Mediation Figures/Mediation_c.png")
 ```
 
 :::
 
 ::::
 
-## References {.smaller auto-animate="true"}
+## References {.smaller auto-animate=true}
 
 ::: {#refs}
 :::
