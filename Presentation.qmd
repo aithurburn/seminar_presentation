@@ -27,15 +27,23 @@ options(knitr.kable.NA = "")
 options((knitr.table.format = "latex"))
 ```
 
+```{css}
+#| echo: false
+
+.reveal table {
+  font-size: smaller;
+}
+
+```
 
 ## OSF {.smaller auto-animate=true}
 :::: {.columns}
 
 ::: {.column width=40%}
-- Experiment 1: 
+- Study 1: 
    - <u> [https://osf.io/eg3ta](http://osf.io/eg3ta) </u>
 
-- Experiment 2:
+- Study 2:
    - <u> [https://osf.io/mcb46](https://osf.io/mcb46) </u>
 :::
 
@@ -43,14 +51,14 @@ options((knitr.table.format = "latex"))
 <a href = 'https://osf.io/eg3ta'>
 <img src='./Images/OSF_1.jpeg'  border = '0' class = 'jpeg-image'>
 </a>
-<p class = 'caption'>Experiment 1</p>
+<p class = 'caption'>Study 1</p>
 :::
 
 ::: {.column width=30%}
 <a href = 'https://osf.io/mcb46'>
 <img src='./Images/OSF_1.jpeg' border = '0' class = 'jpeg-image'>
 </a>
-<p class = 'caption'> Experiment 2</p>
+<p class = 'caption'> Study 2</p>
 :::
 
 ::::
@@ -60,9 +68,9 @@ options((knitr.table.format = "latex"))
 - Background:
    - Risk and Decision-making
    - Social power motives
-- Experiments 1 and 2
-   - Experiment 1: Intro to DOSPERT and DoPL
-   - Experiment 2: DoPL and DOSPERT with Narcissism
+- Studys 1 and 2
+   - Study 1: Intro to DOSPERT and DoPL
+   - Study 2: DoPL and DOSPERT with Narcissism
 - Future directions
 
 
@@ -152,37 +160,51 @@ options((knitr.table.format = "latex"))
 ::::
 
 
-## The present experiments {.smaller auto-animate=true}
+## The present Studys {.smaller auto-animate=true}
 
 :::: {.columns}
 
 ::: {.column width=50% .fragment}
-- Experiment 1
+- Study 1
    - Seeks to verify the validity of the DOSPERT and DoPL in understanding risk and judgment
    - Seeks to understand the relationship between risk and power motivations
 :::
 ::: {.column width=50% .fragment}
-- Experiment 2
+- Study 2
    - Seeks to understand the relationship between risk and power motivations with narcissism
    - Investigate dominance as a moderator of the relationship between risk and power motivations
 :::
 ::::
 
-## Experiment 1 {.smaller auto-animate=true}
-
-## Experimental Design {.smaller auto-animate=true}
-
+## Studyal Design {.smaller auto-animate=true}
+:::: {.columns}
+::: {.column width=50% .fragment}
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
+:::
+:::  {.column width=50% .fragment}
+::: {.fragment .fade-in-then-out}
+<img src = "./Images/DoPL.jpg" width = "100%" height = "100%" class = "jpeg-image">
 
-## Experimental Design {.smaller auto-animate=true}
+:::
 
-- 111 participants on Prolific completed the experiment
-   - Majority white along yet with equal men and women
+::: {.fragment .fade-in-then-out}
+<img src = "./Images/DOSPERT.jpg" width = "100%" height = "100%" class = "jpeg-image">
+
+:::
+:::
+
+::::
+
+
+## Studyal Design {.smaller auto-animate=true}
+
+- 111 participants on Prolific completed the Study
+   - Majority white yet with equal men and women
    - Completed either A-levels or undergraduate degrees
 
-## Hypotheses
+## Hypotheses {.smaller auto-animate=true}
 
 - H1: Dominance will be positively associated with belief in risk positivity/benefit
 - H2: Prestige will not be related to risk positivity/benefit
@@ -192,81 +214,103 @@ options((knitr.table.format = "latex"))
 - H6: A general positive relationship between unique dominance and sub-domains of risk-taking/acceptance
 
 
-### Results {.smaller auto-animate=true}
+## Results {.smaller auto-animate=true}
 
+   - H1: Increasing levels of dominance motivation predicted a more positive perception of the overall benefit of risk behaviors ($\beta$ = 0.26, 95% HDI = [0.08, 0.46]])
+   - H2: Prestige did not predict precpetions of risk benefit ($\beta$ = 0.15, 95% HDI = [-0.05, 0.34])
+   - H3: Leadership was not predictive risk benefit perception ($\beta$ = -0.09, 95% HDI = [-0.27, 0.09]])
+   - H4: There was no relationship between either prestige or Leadership motives, there was a negative relationship with dominance, with stronger dominance predicting decreased perception of risk as risky ($\beta$ = -0.28, 95% HDI = [-0.49, -0.09])
+   - H5: Failed to replicate asymmetry between men and women in willingness to take financial risk ($\beta$ = -0.30, 95% HDI = [-0.66, 0.07])
+   - H6: Data support of the predictive ability of dominance, most strongly for the recreation sub-domain, followed by health/safety, ethical, social, and finally financial risk
 
+## Result table {.smaller auto-animate=true}
 
+```{r}
+#| label: fig-m3perceivedRiskGenderexp1
+#| fig.cap: "Depicted are figures for the Study posterior effect sizes for Study 1."
+#| warning: FALSE
+#| fig.position: H
+#| echo: FALSE
+knitr::include_graphics("../Presentation/Images/Table_4.jpg")
+```
 
 ## Results {.smaller auto-animate=true}
 
-:::: {.columns}
-
-::: {.column width=50%}
-
-
-
-:::
-
-
-::: {.column width=50%}
-
 ```{r}
-#| label: fig-Experiment1PosteriorEffectSizes_1
+#| label: fig-Study1PosteriorEffectSizes_1
 #| fig.height: 12
 #| fig.width: 12
-#| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 1."
+#| fig.cap: "Depicted are figures for the Study posterior effect sizes for Study 1."
 #| warning: FALSE
 #| echo: FALSE
 library(patchwork)
 library(forcats)
 library(ggprism)
 
-graph_1 <- MutateHDI::mutate_ggplot(dataframe = m4_exp_1, regexPairs = c("b_DOSPERTPerceptionz", "b_DOSPERTBenefitz", "b_DOSPERTLikelihoodz"), labels = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), limits = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), plotTitle = "A: Experiment 1", showLegend = "Yes")
+graph_1 <- MutateHDI::mutate_ggplot(dataframe = m4_exp_1, regexPairs = c("b_DOSPERTPerceptionz", "b_DOSPERTBenefitz", "b_DOSPERTLikelihoodz"), labels = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), limits = c("Age", "Gender", "Leadership", "Prestige", "Dominance", "Intercept"), plotTitle = "A: Study 1", showLegend = "Yes")
 
 graph_1
 ```
 
+
+## Study 1 Discussion
+
+- An overall support of our predictions
+- Dominance appeared as the strongest predictor across all sub-domains of DOSPERT
+- The obvious limitations
+   - White, English-speaking, industrialized, rich, and democratic (WEIRD) sample
+- Correlational research and the possibility of a third variable
+   - Narcissism??
+
+## Goals of Study 2
+
+:::: {.columns}
+::: {.column width=50% .fragment}
+- Replicate findings of study 1
+- Investigate the relationship between risk and power motivations with narcissism
+- Investigate dominance as a moderator of the relationship between risk and power motivations
+
 :::
-:::::
+::::
 
-## Experiment 2 {.smaller auto-animate=true}
-
-- Measures
-   - Domain-Specific Risk-Taking Scale ^[@weber2002]
-   - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
-
-## Experiment 2 {.smaller auto-animate=true}
+## Study 2 {.smaller}
 
 - Measures
    - Domain-Specific Risk-Taking Scale ^[@weber2002]
    - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
-   - Brief-Pathological Narcissism Scale ^[@schoenleber2015]
+
+## Study 2 {.smaller auto-animate=true}
+
+:::: {.columns}
+::: {.column width=50% .fragment}
+- Measures
+   - Domain-Specific Risk-Taking Scale ^[@weber2002]
+   - Dominance, Prestige, and Leadership Scale ^[@suessenbach2019]
+   - _*Brief-Pathological Narcissism Scale*_ ^[@schoenleber2015]
+:::
+:::  {.column width=50% .fragment}
+<img src="./Images/B-PNI.jpg" width = "100%" height = "100%" class = "jpeg-image">
+
+:::
+::::
 
 ## Results {.smaller auto-animate=true}
 
-:::: {.columns}
+- H1: Dominance will be positively associated with belief in risk positivity/benefit
+- H2: Prestige will not be related to risk-benefit
+- H3: Leadership will not be related to risk-benefit
+- H4: A positive relationship between unique dominance and subdomains of risk-taking/acceptance
+- H5: DoPL will be positively zero-order correlated with, both zero-order and narcissism (B-PNI)
+- H6: Narcissism will be positively associated with DOSPERT sub-domains
 
-::: {.column width=50%}
+## Results {.smaller auto-animate=true}
 
-
-
-:::
-
-
-::: {.column width=50%}
-
-```{r}
-#| label: fig-Experiment2PosteriorEffectSizes_2
-#| fig.height: 12
-#| fig.width: 12
-#| fig.cap: "Depicted are figures for the Experiment posterior effect sizes for experiment 2."
-#| warning: FALSE
-#| echo: FALSE
-graph_2 <- MutateHDI::mutate_ggplot(dataframe = m2_exp_2, regexPairs = c("b_DOSPERTPerceptionz", "b_DOSPERTBenefitz", "b_DOSPERTLikelihoodz"), labels = c("Age", "Gender", "PNI", "Leadership", "Prestige", "Dominance", "Intercept"), limits = c("Age", "Gender", "PNI", "Leadership", "Prestige", "Dominance", "Intercept"), plotTitle = "B: Experiment 2", showLegend = "Yes")
-graph_2
-```
-:::
-:::::
+- H1: Higher dominance motive scores again predicted the benefit of risky behaviors evaluated more positively ($\beta$ = 0.28, 95% HDI = [0.17, 0.38])
+- H2: Prestige motive didn't predict the benefit of risky behaviors ($\beta$ = -0.02, 95% HDI = [-0.13, 0.08])
+- H3: Leadership motive had no unique relationship with risk-benefit ($\beta$ = 0.0, 95% HDI = [-0.10, 0.10])
+- H4: Dominance-motivated people  had stronger preferences for all sub-domains of risk-taking (table in next slide)
+- H5: Partial support of positive correlations between B-PNI and DoPL motives
+- H6: No unique relationship between B-PNI and any of the sub-domains of DOSPERT
 
 ## Results: Mediation and Moderation {.smaller auto-animate=true}
 
@@ -276,12 +320,10 @@ graph_2
 ```{r}
 #| label: fig-MediationFits_a_and_b
 #| fig.position: H
-#| out.width: "2in"
-#| out.height: "2in"
 #| fig.cap: "A: Figure represents a mediation model with Narcissism as the central mediator in the model. The outcome variables being risk likelihood. \n B: Figure represents a mediation model with Narcissism and Dominance as the central mediators in a parallel model.The outcome variables being risk likelihood."
 #| echo: FALSE
 
-knitr::include_graphics("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Chapters/GraphsandTables/Chapter2/Mediation_fits/Mediation Figures/Mediation_a_b.png")
+knitr::include_graphics("../Presentation/Images/Mediation_a_b.png")
 ```
 
 :::
@@ -291,17 +333,25 @@ knitr::include_graphics("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Diss
 ```{r}
 #| label: fig-MediationFits_c
 #| fig.position: H
-#| out.width: "2in"
-#| out.height: "2in"
-#| fig.cap: "Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model.The outcome variables being risk likelihood."
+#| fig.cap: "Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model. The outcome variables being risk likelihood."
 #| echo: FALSE
 
-knitr::include_graphics("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Chapters/GraphsandTables/Chapter2/Mediation_fits/Mediation Figures/Mediation_c.png")
+knitr::include_graphics("../Presentation/Images/Mediation_c.png")
 ```
 
 :::
 
 ::::
+
+## Discussion
+
+- Dominance motive was the strongest predictor of risk-taking
+- Dominance is also a strong moderator of effects when introducing pathological narcissism
+- Same limitations overall
+- Future directions
+   - Look at sexual experiences and risk-taking + DoPL
+      - In progress
+
 
 ## References {.smaller auto-animate=true}
 
